@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/bleuciel">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="162dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/franklingothicheavy"
+            android:gravity="center"
+            android:text="@string/homeTitle"
+            android:textColor="@color/bleu"
+            android:textSize="40sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="100dp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:orientation="vertical"
+            android:background="@color/bleu">
+
+            <LinearLayout
+                android:id="@+id/LL1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:text="@string/homeTitle2"
+                    android:textColor="@color/white"
+                    android:paddingLeft="70dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/franklingothicheavy"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LL2"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:orientation="vertical"
+                android:layout_marginBottom="50dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/LL21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/franklingothicheavy"
+                        android:text="@string/Nom"
+                        android:textColor="@color/gris"
+                        android:textSize="20sp"/>
+
+                    <EditText
+                        android:id="@+id/Ed1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:hint="@string/NomEdit"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LL22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/franklingothicheavy"
+                        android:text="@string/Prenom"
+                        android:textColor="@color/gris"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/Ed2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:hint="@string/PrenomEdit"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LL3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90dp">
+
+                <Button
+                    android:id="@+id/btnAnnuler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@android:color/transparent"
+                    android:text="@string/Annuler"
+                    android:textColor="@color/grispure"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/btnValider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:text="@string/Valider"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

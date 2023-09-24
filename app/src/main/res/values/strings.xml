@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SIGLManagement</string>
+    <string name="Title">SIGL</string>
+    <string name="LitleTitle">management</string>
+    <string name="welcome">bienvenue dans notre application</string>
+    <string name="homeTitle">TP2 SAISIE</string>
+    <string name="homeTitle2">Saisie SIGL 3</string>
+    <string name="Nom">Nom</string>
+    <string name="Prenom">Prénom(s)</string>
+    <string name="Valider">Valider</string>
+    <string name="Annuler">Annuler</string>
+    <string name="NomEdit">Saisissez votre nom</string>
+    <string name="PrenomEdit">Saisissez vos prénoms</string>
+</resources>
