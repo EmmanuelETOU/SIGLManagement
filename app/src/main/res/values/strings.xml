@@ -1,8 +1,5 @@
 <resources>
     <string name="app_name">SIGLManagement</string>
-    <string name="Title">SIGL</string>
-    <string name="LitleTitle">management</string>
-    <string name="welcome">bienvenue dans notre application</string>
     <string name="homeTitle">TP2 SAISIE</string>
     <string name="homeTitle2">Saisie SIGL 3</string>
     <string name="Nom">Nom</string>

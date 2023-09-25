@@ -14,35 +14,11 @@ import androidx.appcompat.app.AppCompatActivity;
 public class HomeActivity extends AppCompatActivity {
 
     private Button openpopup;
+    private Button btnAnnuler;
     private EditText editName;
     private EditText editSurname;
     private HomeActivity activity;
 
-    public void afficherBoiteDeDialogue() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Titre de la boîte de dialogue");
-        builder.setMessage("Message de la boîte de dialogue");
-
-        // Bouton positif (bouton OK)
-        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int which) {
-                // Code à exécuter lorsque l'utilisateur clique sur le bouton OK
-                dialog.dismiss(); // Fermer la boîte de dialogue
-            }
-        });
-
-        // Bouton négatif (bouton Annuler)
-        builder.setNegativeButton("Annuler", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int which) {
-                // Code à exécuter lorsque l'utilisateur clique sur le bouton Annuler
-                dialog.dismiss(); // Fermer la boîte de dialogue
-            }
-        });
-
-        // Créez et affichez la boîte de dialogue
-        AlertDialog dialog = builder.create();
-        dialog.show();
-    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,7 +28,15 @@ public class HomeActivity extends AppCompatActivity {
         this.openpopup = (Button) findViewById(R.id.btnValider);
         this.editName = (EditText) findViewById(R.id.Ed1);
         this.editSurname = (EditText) findViewById(R.id.Ed2);
+        this.btnAnnuler = (Button) findViewById(R.id.btnAnnuler);
 
+        btnAnnuler.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                editName.setText("");
+                editSurname.setText("");
+            }
+        });
 
         openpopup.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,7 +51,7 @@ public class HomeActivity extends AppCompatActivity {
                             Toast.makeText(getApplicationContext(), "Succès !", Toast.LENGTH_SHORT).show();
                         }
                     });
-                    monpopup.setNegativeButton("Non", new DialogInterface.OnClickListener() {
+                    monpopup.setNegativeButton("Annuler", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
                             Toast.makeText(getApplicationContext(), "Echec !", Toast.LENGTH_SHORT).show();
@@ -78,6 +62,4 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
     }
-
-
 }

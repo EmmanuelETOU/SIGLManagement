@@ -7,7 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="@color/bleuciel">
+        android:background="@color/blanc">
 
         <TextView
             android:layout_width="match_parent"
@@ -19,7 +19,8 @@
             android:fontFamily="@font/franklingothicheavy"
             android:gravity="center"
             android:text="@string/homeTitle"
-            android:textColor="@color/bleu"
+            android:textColor="@color/blanc"
+            android:background="@color/violet"
             android:textSize="40sp"/>
 
         <LinearLayout
@@ -31,7 +32,8 @@
             android:paddingRight="20dp"
             android:paddingLeft="20dp"
             android:orientation="vertical"
-            android:background="@color/bleu">
+            android:background="@color/gris"
+            android:outlineSpotShadowColor="@color/noir">
 
             <LinearLayout
                 android:id="@+id/LL1"
@@ -44,7 +46,7 @@
                     android:layout_height="wrap_content"
                     android:textSize="25sp"
                     android:text="@string/homeTitle2"
-                    android:textColor="@color/white"
+                    android:textColor="@color/noir"
                     android:paddingLeft="70dp"
                     android:layout_marginBottom="30dp"
                     android:layout_marginTop="15dp"
@@ -72,7 +74,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/franklingothicheavy"
                         android:text="@string/Nom"
-                        android:textColor="@color/gris"
+                        android:textColor="@color/noir"
                         android:textSize="20sp"/>
 
                     <EditText
@@ -82,7 +84,7 @@
                         android:inputType="text"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp"
-                        android:textColor="@color/white"
+                        android:textColor="@color/noir"
                         android:textSize="18sp"
                         android:hint="@string/NomEdit"/>
                 </LinearLayout>
@@ -98,7 +100,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/franklingothicheavy"
                         android:text="@string/Prenom"
-                        android:textColor="@color/gris"
+                        android:textColor="@color/noir"
                         android:textSize="20sp" />
 
                     <EditText
@@ -108,7 +110,7 @@
                         android:inputType="text"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp"
-                        android:textColor="@color/white"
+                        android:textColor="@color/noir"
                         android:textSize="18sp"
                         android:hint="@string/PrenomEdit"/>
                 </LinearLayout>
@@ -137,7 +139,7 @@
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
                     android:text="@string/Valider"
-                    android:textColor="@color/white"
+                    android:textColor="@color/violet"
                     android:textSize="15dp" />
 
             </LinearLayout>

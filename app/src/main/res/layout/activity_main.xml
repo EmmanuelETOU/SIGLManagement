@@ -7,56 +7,21 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:id="@+id/LoadingPage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:background="@color/gris">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center">
-
-            <TextView
-                android:id="@+id/SIGL2"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:text="@string/Title"
-                android:textColor="@color/bleu"
-                android:textSize="55dp"
-                android:fontFamily="@font/franklingothicheavy"/>
-
-            <TextView
-                android:id="@+id/management"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:text="@string/LitleTitle"
-                android:textColor="@color/bleu"
-                android:textSize="25dp"/>
-
-        </LinearLayout>
+        android:background="@color/blanc"
+        android:gravity="center">
 
         <ImageView
-
-            android:layout_width="350dp"
-            android:layout_height="500dp"
-            android:src="@drawable/illustration1" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/welcome"
-                android:textSize="20dp"
-                android:textColor="@color/bleu"/>
-        </LinearLayout>
-
+            android:id="@+id/image_icon"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/welcome"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:background="@color/blanc"/>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
